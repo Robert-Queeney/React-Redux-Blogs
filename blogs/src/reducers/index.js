@@ -1,5 +1,8 @@
 import { combineReducers } from 'redux'; 
+import postsReducer from './postsReducer';
+import usersReducer from './usersReducer';
 
 export default combineReducers({
-    replaceMe: () => 'Need to have something here to avoid initial error'
+   posts: postsReducer, 
+   users: usersReducer
 }); 
